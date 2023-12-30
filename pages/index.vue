@@ -1,5 +1,8 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div>home</div>
+  <div>
+    <Banner />
+    <UContainer> </UContainer>
+  </div>
 </template>

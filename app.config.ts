@@ -2,6 +2,9 @@ export default defineAppConfig({
   ui: {
     primary: "lime",
     gray: "neutral",
+    container: {
+      padding: "px-0",
+    },
     card: {
       base: "overflow-hidden",
       background: "bg-white dark:bg-[#141326]",
@@ -12,12 +15,12 @@ export default defineAppConfig({
       body: {
         base: "",
         background: "",
-        padding: "px-4 py-5 sm:p-6",
+        padding: "p-0 sm:p-0",
       },
       header: {
         base: "",
         background: "white",
-        padding: "px-4 py-5 sm:px-6",
+        padding: "px-4 py-0 sm:px-6",
       },
       footer: {
         base: "",

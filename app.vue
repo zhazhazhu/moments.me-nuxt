@@ -10,14 +10,8 @@ useHead({
 </script>
 
 <template>
-  <UContainer>
-    <UCard>
-      <template #header>
-        <Header />
-      </template>
-      <NuxtPage />
-    </UCard>
-  </UContainer>
+  <Header />
+  <NuxtPage />
 </template>
 
 <style>

@@ -11,6 +11,8 @@
   },
   "devDependencies": {
     "@iconify-json/mdi": "^1.1.63",
+    "@iconify-json/ph": "^1.1.9",
+    "@iconify-json/tabler": "^1.1.102",
     "@nuxt/ui": "^2.11.1",
     "nuxt": "^3.9.0",
     "vue": "^3.4.0",
