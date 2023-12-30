@@ -10,7 +10,7 @@ export default defineNuxtConfig({
 
   css: ["~/styles/index.css"],
 
-  modules: ["@nuxt/ui"],
+  modules: ["@nuxt/ui", "@nuxt/content", "@vueuse/nuxt", "dayjs-nuxt"],
 
   devtools: { enabled: true },
 });

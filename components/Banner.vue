@@ -1,8 +1,4 @@
-<script lang="ts" setup>
-const overlay = computed(() =>
-  isDark.value ? "/images/overlay-dark.png" : "/images/overlay.png"
-);
-</script>
+<script lang="ts" setup></script>
 
 <template>
   <div class="relative overflow-hidden h-screen">
@@ -23,7 +19,7 @@ const overlay = computed(() =>
         class="bg-[#acd1e47d] dark:bg-[#141326c2] absolute top-0 left-0 w-full h-full"
       />
       <div
-        class="font-sans absolute text-[#f8fafc] left-[50%] top-[45%] -translate-x-[50%] -translate-y-[50%] text-center"
+        class="font-sans antialiased absolute text-[#f8fafc] left-[50%] top-[45%] -translate-x-[50%] -translate-y-[50%] text-center"
       >
         <div class="mb-4 text-4xl font-bold">Zhazhazhu</div>
         <div class="text-sm">
@@ -33,7 +29,12 @@ const overlay = computed(() =>
       </div>
 
       <div class="absolute bottom-0 w-full">
-        <img :src="overlay" class="w-full" />
+        <ClientOnly>
+          <img
+            :src="isDark ? '/images/overlay-dark.png' : '/images/overlay.png'"
+            class="w-full"
+          />
+        </ClientOnly>
       </div>
     </div>
 

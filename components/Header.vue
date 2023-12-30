@@ -55,16 +55,20 @@
               })
             "
           />
-          <UButton
-            :icon="
-              isDark ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'
-            "
-            size="lg"
-            color="gray"
-            variant="ghost"
-            aria-label="Theme"
-            @click="() => toggleDark()"
-          />
+          <ClientOnly>
+            <UButton
+              :icon="
+                isDark
+                  ? 'i-heroicons-moon-20-solid'
+                  : 'i-heroicons-sun-20-solid'
+              "
+              size="lg"
+              color="gray"
+              variant="ghost"
+              aria-label="Theme"
+              @click="() => toggleDark()"
+            />
+          </ClientOnly>
         </div>
       </div>
     </UContainer>
