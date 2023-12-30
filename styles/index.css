@@ -1,0 +1,6 @@
+html {
+  background-color: white;
+}
+html.dark {
+  background-color: #141326;
+}
