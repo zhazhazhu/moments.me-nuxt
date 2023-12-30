@@ -17,7 +17,11 @@
         }"
         v-slot="{ list }"
       >
-        <div v-for="article in list" :key="article._id" class="my-10">
+        <div
+          v-for="article in list"
+          :key="article._id"
+          class="my-10 tracking-wide"
+        >
           <div class="text-2xl font-bold py-2" name="title">
             {{ article.title }}
           </div>
@@ -31,10 +35,9 @@
             </span>
           </div>
           <div class="pb-4" name="image" v-if="article.image">
-            <template
-              v-if="typeof article.image === 'object' && article.image?.src"
-            >
+            <template v-if="typeof article.image === 'object'">
               <img
+                v-if="article.image?.src"
                 :src="article.image?.src"
                 :alt="article.image?.alt"
                 :width="article.image?.width"
@@ -57,7 +60,7 @@
             <ULink
               :to="article._path"
               active-class="text-primary"
-              inactive-class="text-sm text-indigo-500 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-200"
+              inactive-class="text-sm text-primary-500 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-200"
             >
               阅读更多...
             </ULink>

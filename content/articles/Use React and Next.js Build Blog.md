@@ -22,7 +22,7 @@ head:
 #### 环境配置
 
 <tag>MacOS</tag>
-<tag>Node@18.15.0</tag>
+<tag size="lg">Node@18.15.0</tag>
 <tag>Pnpm@8.6.1</tag>
 
 #### 主要工具
@@ -64,4 +64,4 @@ Next.js 客户端默认入口文件在 app/layout.tsx(这里的说明是不包�
 
 
 <tag>相册</tag>
-存放一些生活照片，数据维护在 ./source/photo.json，设计以上同理，这里的照片一部分是存在github，图片上传使用了我自己写的 <a href="/posts/TmV4dC5qcyBjcmVhdGUgYmxvZy5tZA==">Github-Markdown</a>，还有一部分直接取了自己Github的一个文件下的所有的照片
+存放一些生活照片，数据维护在 ./source/photo.json，设计以上同理，这里的照片一部分是存在github，图片上传使用了我自己写的 <a href="">Github-Markdown</a>，还有一部分直接取了自己Github的一个文件下的所有的照片

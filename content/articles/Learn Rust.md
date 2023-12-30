@@ -269,12 +269,12 @@ use std::io::{self, Write};
 
 > 智能指针的例子
 
-- String 和 Vec<T>
+- String 和 Vec 
 - 都拥有一片内存区域，且允许用户对其操作
 - 还拥有元数据（例如容量等）
 - 提供额外的功能或保障 (String 保障其数据是合法的 UTF-8 编码)
 
-### 使用 BOX<T> 来指向 Heap(堆内存) 上的数据
+### 使用 BOX 来指向 Heap(堆内存) 上的数据
 
 > Box<T ＞ 的常用场景
 
@@ -330,7 +330,7 @@ v.push(2); // error,错误
 
 ### 8.2 String
 
-- 很多 Vec<T> 的操作都可用于 String
+- 很多 Vec 的操作都可用于 String
 - String::new() 函数
 - 初始化创建 String
 - - to_string() 方法，可用于实现了 Display trait 的类型，包括字符串字面值
@@ -373,7 +373,7 @@ let s4 = format!("{}-{}-{}", s1, s2, s3);
 println!("{}", s4);
 ```
 
-> **_String 是对 Vec<u8> 的包装_**
+> **_String 是对 Vec<\u8> 的包装_**
 
 ```rs
 let length = String::from("hello").len();

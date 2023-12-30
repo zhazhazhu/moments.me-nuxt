@@ -1,8 +1,13 @@
+<script lang="ts" setup>
+const route = useRoute();
+const isHome = computed(() => route.path === "/");
+</script>
+
 <template>
-  <div class="fixed w-screen left top-0 z-10">
+  <div class="w-screen left top-0 z-10" :class="isHome && 'fixed'">
     <UContainer>
       <div class="flex items-center h-[65px] px-4">
-        <div class="flex items-end cursor-pointer">
+        <div class="flex items-end cursor-pointer" @click="navigateTo('/')">
           <UIcon name="i-tabler-zzz" class="text-4xl" />
           <span
             class="font-mono text-2xl leading-6 ml-1 font-semibold select-none"

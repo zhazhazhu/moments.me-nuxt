@@ -1,6 +1,6 @@
-html {
+html,body {
   background-color: white;
 }
-html.dark {
+html.dark, html.dark body {
   background-color: #141326;
 }
