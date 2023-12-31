@@ -27,5 +27,6 @@
         </ContentRenderer>
       </div>
     </ContentDoc>
+    <Comments />
   </UContainer>
 </template>

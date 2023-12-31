@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     pageTransition: { name: "page", mode: "out-in" },
   },
 
-  css: ["~/styles/index.css"],
+  css: ["~/styles/index.css", "gitalk/dist/gitalk.css"],
 
   ui: {
     icons: ["mdi", "ph", "tabler", "vscode-icons", "icon-park-solid"],
@@ -23,6 +23,13 @@ export default defineNuxtConfig({
         // Theme used if `html.sepia`
         sepia: "monokai",
       },
+    },
+  },
+
+  runtimeConfig: {
+    public: {
+      clientID: process.env.NUXT_CLIENT_ID,
+      clientSecret: process.env.NUXT_CLIENT_SECRET,
     },
   },
 
