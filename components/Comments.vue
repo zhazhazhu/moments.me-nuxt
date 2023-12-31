@@ -22,5 +22,28 @@ onMounted(() => {
 </script>
 
 <template>
-  <div ref="container" class="pb-40px"></div>
+  <div ref="container" class="pb-[40px] gt-container"></div>
 </template>
+
+<style scoped>
+html.dark .gt-container >>> .gt-meta {
+  border-bottom: 1px solid #1e293c;
+}
+html.dark .gt-container >>> .gt-header-textarea {
+  background-color: #1e293c;
+}
+html.dark .gt-container >>> .gt-comment-content {
+  background-color: #1e293c;
+  border-radius: 4px;
+}
+html.dark .gt-container >>> .gt-comment-content:hover {
+  box-shadow: 0 0.625em 3.75em 0 #1e293c;
+}
+html.dark .gt-container >>> .gt-comment-body {
+  color: white !important;
+}
+html.dark .gt-container >>> .gt-header-preview {
+  background-color: #1e293c;
+  color: white;
+}
+</style>
