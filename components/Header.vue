@@ -4,9 +4,9 @@ const isHome = computed(() => route.path === "/");
 </script>
 
 <template>
-  <div class="w-screen left top-0 z-10" :class="isHome && 'fixed'">
+  <div class="w-screen left top-0 z-10" :class="[isHome && 'fixed']">
     <UContainer>
-      <div class="flex items-center h-[65px] px-4">
+      <div class="flex items-center h-[65px]">
         <div class="flex items-end cursor-pointer" @click="navigateTo('/')">
           <UIcon name="i-tabler-zzz" class="text-4xl" />
           <span
@@ -22,6 +22,7 @@ const isHome = computed(() => route.path === "/");
             color="gray"
             variant="ghost"
             aria-label="Zhazhazhu Collect"
+            @click="navigateTo('/collects')"
           />
           <UButton
             icon="i-mdi-file-image-box"
@@ -60,6 +61,13 @@ const isHome = computed(() => route.path === "/");
               })
             "
           />
+          <!-- <UButton
+            icon="i-ph-magnifying-glass"
+            size="lg"
+            color="gray"
+            variant="ghost"
+            aria-label="Zhazhazhu Collect"
+          /> -->
           <ClientOnly>
             <UButton
               :icon="

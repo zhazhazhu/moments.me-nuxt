@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <UContainer>
+  <UContainer :ui="{ base: 'pt-[70px]' }">
     <ContentDoc v-slot="{ doc }" :excerpt="true">
       <div class="px-4 py-4">
         <div class="text-2xl font-bold py-2" name="title">
@@ -20,7 +20,11 @@
         <ContentRenderer
           :value="doc"
           class="prose dark:prose-invert max-w-none"
-        />
+        >
+          <template #empty>
+            <p>No content found.</p>
+          </template>
+        </ContentRenderer>
       </div>
     </ContentDoc>
   </UContainer>

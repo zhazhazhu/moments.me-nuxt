@@ -17,9 +17,9 @@ export default defineNuxtConfig({
     highlight: {
       theme: {
         // Default theme (same as single string)
-        default: "github-light",
+        default: "vitesse-light",
         // Theme used if `html.dark`
-        dark: "github-dark",
+        dark: "vitesse-dark",
         // Theme used if `html.sepia`
         sepia: "monokai",
       },

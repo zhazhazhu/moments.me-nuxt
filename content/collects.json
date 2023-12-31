@@ -1,0 +1,176 @@
+{
+  "content": {
+    "最新项目(me)": [
+      {
+        "name": "Vue3-oidc",
+        "icon": "logos:authy",
+        "link": "https://github.com/zhazhazhu/vue3-oidc",
+        "description": "auth 响应式授权"
+      },
+      {
+        "name": "Markdown",
+        "icon": "cryptocurrency-color:comp",
+        "link": "https://github.com/zhazhazhu/md-github",
+        "description": "基于github api 在线写markdown和图床"
+      }
+    ],
+    "社交": [
+      {
+        "name": "Twitter",
+        "icon": "devicon:twitter",
+        "link": "https://twitter.com/Zhazhazhu_",
+        "description": "Twitter 个人主页"
+      },
+      {
+        "name": "Github",
+        "icon": "devicon:github",
+        "link": "https://github.com/zhazhazhu",
+        "description": "Github 个人主页"
+      }
+    ],
+    "文档(工具类)": [
+      {
+        "name": "Vue3",
+        "icon": "devicon:vuejs",
+        "link": "https://cn.vuejs.org/",
+        "description": "Vue3官方文档"
+      },
+      {
+        "name": "Vue-Router",
+        "icon": "devicon:vuejs",
+        "link": "https://router.vuejs.org/zh/",
+        "description": "Vue官方路由"
+      },
+      {
+        "name": "Vite",
+        "icon": "devicon:vitejs",
+        "link": "https://cn.vitejs.dev/",
+        "description": "Vite官方文档,下一代的前端工具链"
+      },
+      {
+        "name": "Turbo",
+        "icon": "vscode-icons:file-type-turbo",
+        "link": "https://turbo.build/",
+        "description": "一个增量捆绑器和构建系统,Rust 编写"
+      },
+      {
+        "name": "Vitest",
+        "icon": "vscode-icons:file-type-vitest",
+        "link": "https://vitest.dev/",
+        "description": "Vitest官方文档"
+      },
+      {
+        "name": "React",
+        "icon": "vscode-icons:file-type-reactjs",
+        "link": "https://zh-hans.react.dev/",
+        "description": "React官方文档"
+      },
+      {
+        "name": "Unocss",
+        "icon": "vscode-icons:file-type-unocss",
+        "link": "https://unocss.dev/",
+        "description": "Unocss官方文档,即时按需原子化CSS引擎"
+      },
+      {
+        "name": "Tailwindcss",
+        "icon": "devicon:tailwindcss",
+        "link": "https://tailwindcss.com/",
+        "description": "一个实用程序优先的 CSS 框架"
+      },
+      {
+        "name": "VueUse",
+        "icon": "logos:vueuse",
+        "link": "https://vueuse.org/",
+        "description": "Vue 组合实用程序集合 (最低支持Vue2.7)"
+      },
+      {
+        "name": "Pinia",
+        "icon": "logos:pinia",
+        "link": "https://pinia.esm.dev/",
+        "description": "Vue.js的商店(Store)"
+      },
+      {
+        "name": "Nitro",
+        "icon": "https://nitro.unjs.io/favicon.ico",
+        "link": "https://nitro.unjs.io/",
+        "description": "创建一个可在任何地方运行的 Web 服务器"
+      }
+    ],
+    "文档(UI)": [
+      {
+        "name": "Element-Plus",
+        "icon": "logos:element",
+        "link": "https://element-plus.gitee.io/zh-CN/",
+        "description": "一个最热门的Vue3 UI框架"
+      },
+      {
+        "name": "Vant4",
+        "icon": "https://fastly.jsdelivr.net/npm/@vant/assets/logo.png",
+        "link": "https://vant-contrib.gitee.io/vant/#/zh-CN",
+        "description": "一个轻量、可定制的移动端组件库"
+      }
+    ],
+    "Icon": [
+      {
+        "name": "Ali-Icon",
+        "icon": "",
+        "link": "https://www.iconfont.cn/",
+        "description": "阿里Iconfont官网"
+      },
+      {
+        "name": "Icones",
+        "icon": "bxl:patreon",
+        "link": "https://icones.js.org/",
+        "description": "Icones 官网"
+      },
+      {
+        "name": "IconPark",
+        "icon": "https://lf1-cdn2-tos.bytegoofy.com/bydesign/iconparksite/static/media/logo_with_name.598fc011.svg",
+        "link": "https://iconpark.oceanengine.com/home",
+        "description": "Icones 官网"
+      }
+    ],
+    "工具": [
+      {
+        "name": "Figma",
+        "icon": "logos:figma",
+        "link": "https://www.figma.com/",
+        "description": "在线设计"
+      }
+    ],
+    "欣赏": [
+      {
+        "name": "花瓣",
+        "icon": "https://st0.dancf.com/static/02/202306090204-51f4.png",
+        "link": "https://huaban.com/",
+        "description": "花瓣，陪你做生活的设计师"
+      },
+      {
+        "name": "站酷",
+        "icon": "https://static.zcool.cn/git_z/z/site/favicon.ico",
+        "link": "https://www.zcool.com.cn/",
+        "description": "一个设计找图网站"
+      },
+      {
+        "name": "知末",
+        "icon": "https://pin.znztv.com/public/favicon.ico",
+        "link": "https://pin.znztv.com/",
+        "description": "室内设计灵感"
+      },
+      {
+        "name": "Behance",
+        "icon": "devicon:behance",
+        "link": "https://www.behance.net/",
+        "description": "为你呈现"
+      }
+    ],
+    "音乐": [
+      {
+        "name": "Spotify",
+        "icon": "logos:spotify-icon",
+        "link": "https://open.spotify.com/",
+        "description": "好用的音乐软件"
+      }
+    ]
+  }
+}

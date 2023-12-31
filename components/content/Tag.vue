@@ -1,3 +1,3 @@
 <template>
-  <UBadge color="primary" size="lg"><slot /></UBadge>
+  <UBadge class="mb-1" color="primary" size="lg"><slot /></UBadge>
 </template>
