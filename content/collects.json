@@ -8,10 +8,16 @@
         "description": "auth 响应式授权"
       },
       {
-        "name": "Markdown",
-        "icon": "cryptocurrency-color:comp",
-        "link": "https://github.com/zhazhazhu/md-github",
-        "description": "基于github api 在线写markdown和图床"
+        "name": "Npack",
+        "icon": "vscode-icons:file-type-package",
+        "link": "https://github.com/zhazhazhu/ni",
+        "description": "使用正确的包管理器"
+      },
+      {
+        "name": "Picx-app",
+        "icon": "https://picx.xpoet.cn/assets/logo.ffee4291.png",
+        "link": "https://github.com/picx-apps/picx-app",
+        "description": "一个免费的图床App, picx 的 App版本, 支持macos/linux/windows"
       }
     ],
     "社交": [
