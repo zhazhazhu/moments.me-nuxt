@@ -32,7 +32,7 @@ const icon = computed(() => icons[props.language || ""] || "");
       <div class="flex-1 flex items-center">
         <UIcon v-if="icon" :name="icon" class="h-5 mr-1" />
         <div class="leading-4 font-light text-sm">
-          {{ filename || "example" }}
+          {{ filename || language }}
         </div>
       </div>
 

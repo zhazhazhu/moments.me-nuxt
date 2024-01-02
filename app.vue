@@ -1,4 +1,8 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+useHead({
+  link: [{ rel: "icon", href: "/favicon.svg" }],
+});
+</script>
 
 <template>
   <Header />

@@ -7,7 +7,6 @@ useHead({
     { name: "description", content: "Zhazhazhu 的个人网站" },
     { name: "author", content: "Zhazhazhu" },
   ],
-  link: [{ rel: "icon", href: "/favicon.svg" }],
 });
 
 const query: QueryBuilderParams = {

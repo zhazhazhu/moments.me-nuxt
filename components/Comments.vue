@@ -26,23 +26,23 @@ onMounted(() => {
 </template>
 
 <style scoped>
-html.dark .gt-container >>> .gt-meta {
+html.dark .gt-container :deep(.gt-meta) {
   border-bottom: 1px solid #1e293c;
 }
-html.dark .gt-container >>> .gt-header-textarea {
+html.dark .gt-container :deep(.gt-header-textarea) {
   background-color: #1e293c;
 }
-html.dark .gt-container >>> .gt-comment-content {
+html.dark .gt-container :deep(.gt-comment-content) {
   background-color: #1e293c;
   border-radius: 4px;
 }
-html.dark .gt-container >>> .gt-comment-content:hover {
+html.dark .gt-container :deep(.gt-comment-content:hover) {
   box-shadow: 0 0.625em 3.75em 0 #1e293c;
 }
-html.dark .gt-container >>> .gt-comment-body {
+html.dark .gt-container :deep(.gt-comment-body) {
   color: white !important;
 }
-html.dark .gt-container >>> .gt-header-preview {
+html.dark .gt-container :deep(.gt-header-preview) {
   background-color: #1e293c;
   color: white;
 }
