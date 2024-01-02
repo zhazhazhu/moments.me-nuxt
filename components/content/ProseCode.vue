@@ -12,7 +12,7 @@ const { copy, copied } = useClipboard({
   source: props.code,
 });
 
-const icon: Record<string, string> = {
+const icons: Record<string, string> = {
   ts: "i-vscode-icons-file-type-typescript",
   typescript: "i-vscode-icons-file-type-typescript",
   js: "i-vscode-icons-file-type-js",
@@ -23,13 +23,14 @@ const icon: Record<string, string> = {
   bash: "i-vscode-icons-file-type-shell",
   yaml: "i-vscode-icons-file-type-light-yaml",
 };
+const icon = computed(() => icons[props.language || ""] || "");
 </script>
 
 <template>
   <DefineHeader>
     <div class="flex items-center">
       <div class="flex-1 flex items-center">
-        <UIcon v-if="language" :name="icon[language]" class="h-5 mr-1" />
+        <UIcon v-if="icon" :name="icon" class="h-5 mr-1" />
         <div class="leading-4 font-light text-sm">
           {{ filename || "example" }}
         </div>

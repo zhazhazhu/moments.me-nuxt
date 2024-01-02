@@ -1,8 +1,6 @@
 ---
 title: Npack 一个包管理器
 image:
-  src: 
-  alt: Zhazhazhu moments
 description: use the right package manager(使用正确的包管理器，这个项目参考大佬 antfu/ni, 我使用了Rust重写，无运行时，无依赖)
 date: 2024-1-1
 ---

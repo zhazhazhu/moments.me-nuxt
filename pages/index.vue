@@ -1,22 +1,27 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import type { QueryBuilderParams } from "@nuxt/content/dist/runtime/types";
+
+useHead({
+  title: "Zhazhazhu moments",
+  meta: [
+    { name: "description", content: "Zhazhazhu 的个人网站" },
+    { name: "author", content: "Zhazhazhu" },
+  ],
+  link: [{ rel: "icon", href: "/favicon.svg" }],
+});
+
+const query: QueryBuilderParams = {
+  path: "/articles",
+  sort: [{ date: -1, $numeric: true }],
+};
+</script>
 
 <template>
   <div>
     <Banner />
 
     <UContainer class="px-5">
-      <ContentList
-        path="/articles"
-        :query="{
-          sort: [
-            {
-              date: -1,
-              $numeric: true,
-            },
-          ],
-        }"
-        v-slot="{ list }"
-      >
+      <ContentList :query="query" v-slot="{ list }">
         <div
           v-for="article in list"
           :key="article._id"

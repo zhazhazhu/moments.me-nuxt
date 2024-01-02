@@ -1,13 +1,4 @@
-<script lang="ts" setup>
-useSeoMeta({
-  title: "Zhazhazhu moments",
-  description: "Zhazhazhu 的个人网站",
-  author: "Zhazhazhu",
-});
-useHead({
-  link: [{ rel: "icon", href: "/favicon.svg" }],
-});
-</script>
+<script lang="ts" setup></script>
 
 <template>
   <Header />
