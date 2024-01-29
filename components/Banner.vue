@@ -1,4 +1,6 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const colorMode = useColorMode();
+</script>
 
 <template>
   <div class="relative overflow-hidden h-screen">
@@ -29,12 +31,16 @@
       </div>
 
       <div class="absolute bottom-0 w-full">
-        <ClientOnly>
-          <img
-            :src="isDark ? '/images/overlay-dark.png' : '/images/overlay.png'"
-            class="w-full"
-          />
-        </ClientOnly>
+        <img
+          src="/images/overlay-dark.png"
+          class="w-full transition-all duration-1000"
+          v-show="colorMode.value === 'dark'"
+        />
+        <img
+          src="/images/overlay.png"
+          class="w-full transition-all duration-1000"
+          v-show="colorMode.value !== 'dark'"
+        />
       </div>
     </div>
 
