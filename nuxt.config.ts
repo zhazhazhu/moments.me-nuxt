@@ -10,7 +10,23 @@ export default defineNuxtConfig({
   css: ["~/styles/index.css", "gitalk/dist/gitalk.css"],
 
   ui: {
-    icons: ["mdi", "ph", "tabler", "vscode-icons", "icon-park-solid"],
+    icons: [
+      "mdi",
+      "ph",
+      "tabler",
+      "vscode-icons",
+      "icon-park-solid",
+      "fluent-emoji-high-contrast",
+      "material-symbols",
+      "material-symbols-light",
+    ],
+  },
+
+  colorMode: {
+    preference: "system", // default value of $colorMode.preference
+    fallback: "light", // fallback value if not system preference found
+    globalName: "__NUXT_COLOR_MODE__",
+    componentName: "ColorScheme",
   },
 
   content: {

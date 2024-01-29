@@ -23,13 +23,13 @@ defineProps<{
     <div class="mr-[16px]" v-if="value.icon">
       <Icon
         :icon="value.icon"
-        class="text-[26px]"
+        class="text-[24px]"
         v-if="!value.icon.startsWith('http')"
       />
-      <img v-else :src="value.icon" :alt="value.name" width="26" height="26" />
+      <img v-else :src="value.icon" :alt="value.name" width="24" height="24" />
     </div>
     <!-- content -->
-    <div>
+    <div class="flex-1">
       <h4 class="text-base text-slate-700 dark:text-white">
         {{ value.name }}
       </h4>

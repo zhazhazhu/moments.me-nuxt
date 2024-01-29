@@ -9,15 +9,21 @@
       },
       {
         "name": "Npack",
-        "icon": "vscode-icons:file-type-package",
+        "icon": "vscode-icons:file-type-webpack",
         "link": "https://github.com/zhazhazhu/ni",
-        "description": "使用正确的包管理器"
+        "description": "一个包管理器(Rust)"
+      },
+      {
+        "name": "Airnc",
+        "icon": "material-symbols:bigtop-updates-rounded",
+        "link": "https://github.com/zhazhazhu/airnc",
+        "description": "一个局域网传输工具(Rust)"
       },
       {
         "name": "Picx-app",
         "icon": "https://picx.xpoet.cn/assets/logo.ffee4291.png",
         "link": "https://github.com/picx-apps/picx-app",
-        "description": "一个免费的图床App, picx 的 App版本, 支持macos/linux/windows"
+        "description": "一个免费的图床, Picx 的 App版本 (全平台)"
       }
     ],
     "社交": [

@@ -1,6 +1,33 @@
 <script lang="ts" setup>
+import type { DropdownItem } from "@nuxt/ui/dist/runtime/types";
+import { useChangeCase } from "@vueuse/integrations/useChangeCase";
+
 const route = useRoute();
 const isHome = computed(() => route.path === "/");
+const colorMode = useColorMode();
+const items: DropdownItem[][] = [
+  [
+    {
+      label: useChangeCase(ColorMode.Light, "capitalCase").value,
+      icon: colorModeIcon[ColorMode.Light],
+      click: () => toggleColorMode(ColorMode.Light),
+    },
+    {
+      label: useChangeCase(ColorMode.Dark, "capitalCase").value,
+      icon: colorModeIcon[ColorMode.Dark],
+      click: () => toggleColorMode(ColorMode.Dark),
+    },
+    {
+      label: useChangeCase(ColorMode.System, "capitalCase").value,
+      icon: colorModeIcon[ColorMode.System],
+      click: () => toggleColorMode(ColorMode.System),
+    },
+  ],
+];
+
+function toggleColorMode(value: string) {
+  colorMode.preference = value;
+}
 </script>
 
 <template>
@@ -8,7 +35,7 @@ const isHome = computed(() => route.path === "/");
     <UContainer>
       <div class="flex items-center h-[65px]">
         <div class="flex items-end cursor-pointer" @click="navigateTo('/')">
-          <UIcon name="i-tabler-zzz" class="text-4xl" />
+          <UIcon name="i-fluent-emoji-high-contrast-zzz" class="text-4xl" />
           <span
             class="font-mono text-2xl leading-6 ml-1 font-semibold select-none"
           >
@@ -17,7 +44,7 @@ const isHome = computed(() => route.path === "/");
 
         <div class="flex-1 text-right">
           <UButton
-            icon="i-mdi-star"
+            icon="i-material-symbols-camera"
             size="lg"
             color="gray"
             variant="ghost"
@@ -25,7 +52,7 @@ const isHome = computed(() => route.path === "/");
             @click="navigateTo('/collects')"
           />
           <UButton
-            icon="i-mdi-file-image-box"
+            icon="i-material-symbols-android-camera"
             size="lg"
             color="gray"
             variant="ghost"
@@ -68,20 +95,21 @@ const isHome = computed(() => route.path === "/");
             variant="ghost"
             aria-label="Zhazhazhu Collect"
           /> -->
-          <ClientOnly>
-            <UButton
-              :icon="
-                isDark
-                  ? 'i-heroicons-moon-20-solid'
-                  : 'i-heroicons-sun-20-solid'
-              "
-              size="lg"
-              color="gray"
-              variant="ghost"
-              aria-label="Theme"
-              @click="() => toggleDark()"
-            />
-          </ClientOnly>
+          <ColorScheme>
+            <UDropdown
+              :items="items"
+              :popper="{ placement: 'bottom-end' }"
+              :ui="{ width: 'w-26' }"
+            >
+              <UButton
+                :icon="colorModeIcon[colorMode.value]"
+                size="lg"
+                color="gray"
+                variant="ghost"
+                aria-label="Theme"
+              />
+            </UDropdown>
+          </ColorScheme>
         </div>
       </div>
     </UContainer>
