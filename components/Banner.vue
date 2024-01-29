@@ -25,7 +25,9 @@ const colorMode = useColorMode();
       >
         <div class="mb-4 text-4xl font-bold">Zhazhazhu</div>
         <div class="text-sm">
-          <div class="mb-3">愿世上再无剥削</div>
+          <div class="mb-3">
+            花瓣飘落下游生根, 命运敲定了要这么发生 -- 落花流水
+          </div>
           <div>现居 杭州 / 语言 (Ts | Rust)</div>
         </div>
       </div>
