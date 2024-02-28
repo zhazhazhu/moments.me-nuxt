@@ -31,14 +31,15 @@ function toggleColorMode(value: string) {
 </script>
 
 <template>
-  <div class="w-screen left top-0 z-10" :class="[isHome && 'fixed']">
+  <div class="w-screen left top-0 z-50" :class="[isHome && 'fixed']">
     <UContainer>
       <div class="flex items-center h-[65px]">
         <div class="flex items-end cursor-pointer" @click="navigateTo('/')">
-          <UIcon name="i-fluent-emoji-high-contrast-zzz" class="text-4xl" />
+          <UIcon name="i-fluent-emoji-broccoli" class="text-3xl" />
           <span
-            class="font-mono text-2xl leading-6 ml-1 font-semibold select-none"
+            class="font-mono text-xl leading-6 ml-1 font-semibold select-none text-gray-700 dark:text-white"
           >
+            Z z
           </span>
         </div>
 

@@ -16,7 +16,7 @@ export default defineNuxtConfig({
       "tabler",
       "vscode-icons",
       "icon-park-solid",
-      "fluent-emoji-high-contrast",
+      "fluent-emoji",
       "material-symbols",
       "material-symbols-light",
     ],
