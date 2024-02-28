@@ -1,32 +1,31 @@
 <script lang="ts" setup>
-import type { DropdownItem } from "@nuxt/ui/dist/runtime/types";
-import { useChangeCase } from "@vueuse/integrations/useChangeCase";
-
 const route = useRoute();
 const isHome = computed(() => route.path === "/");
 const colorMode = useColorMode();
-const items: DropdownItem[][] = [
-  [
-    {
-      label: useChangeCase(ColorMode.Light, "capitalCase").value,
-      icon: colorModeIcon[ColorMode.Light],
-      click: () => toggleColorMode(ColorMode.Light),
-    },
-    {
-      label: useChangeCase(ColorMode.Dark, "capitalCase").value,
-      icon: colorModeIcon[ColorMode.Dark],
-      click: () => toggleColorMode(ColorMode.Dark),
-    },
-    {
-      label: useChangeCase(ColorMode.System, "capitalCase").value,
-      icon: colorModeIcon[ColorMode.System],
-      click: () => toggleColorMode(ColorMode.System),
-    },
-  ],
+const items: { icon: string; value: string }[] = [
+  {
+    icon: colorModeIcon[ColorMode.Light],
+    value: ColorMode.Light,
+  },
+  {
+    icon: colorModeIcon[ColorMode.Dark],
+    value: ColorMode.Dark,
+  },
+  {
+    icon: colorModeIcon[ColorMode.System],
+    value: ColorMode.System,
+  },
 ];
 
-function toggleColorMode(value: string) {
-  colorMode.preference = value;
+watchEffect(() => {
+  console.log(colorMode);
+});
+
+function toggleColorMode() {
+  const index = items.findIndex((item) => item.value === colorMode.preference);
+
+  colorMode.preference =
+    items[index === items.length - 1 ? 0 : index + 1].value;
 }
 </script>
 
@@ -97,6 +96,16 @@ function toggleColorMode(value: string) {
             aria-label="Zhazhazhu Collect"
           /> -->
           <ColorScheme>
+            <UButton
+              :icon="colorModeIcon[colorMode.preference]"
+              size="lg"
+              color="gray"
+              variant="ghost"
+              aria-label="Theme"
+              @click="() => toggleColorMode()"
+            />
+          </ColorScheme>
+          <!-- <ColorScheme>
             <UDropdown
               :items="items"
               :popper="{ placement: 'bottom-end' }"
@@ -110,7 +119,7 @@ function toggleColorMode(value: string) {
                 aria-label="Theme"
               />
             </UDropdown>
-          </ColorScheme>
+          </ColorScheme> -->
         </div>
       </div>
     </UContainer>

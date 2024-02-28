@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@iconify-json/fluent": "^1.1.49",
     "@iconify-json/fluent-emoji": "^1.1.18",
     "@iconify-json/icon-park-solid": "^1.1.14",
     "@iconify-json/material-symbols": "^1.1.71",

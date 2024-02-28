@@ -7,5 +7,5 @@ export enum ColorMode {
 export const colorModeIcon: Record<string, string> = {
   [ColorMode.Light]: "i-heroicons-sun-20-solid",
   [ColorMode.Dark]: "i-heroicons-moon-20-solid",
-  [ColorMode.System]: "i-material-symbols-light-display-settings",
+  [ColorMode.System]: "i-fluent-dark-theme-20-filled",
 };

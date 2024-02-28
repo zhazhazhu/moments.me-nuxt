@@ -14,6 +14,7 @@ export default defineNuxtConfig({
       "mdi",
       "ph",
       "tabler",
+      "fluent",
       "vscode-icons",
       "icon-park-solid",
       "fluent-emoji",
