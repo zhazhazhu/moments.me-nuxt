@@ -17,10 +17,6 @@ const items: { icon: string; value: string }[] = [
   },
 ];
 
-watchEffect(() => {
-  console.log(colorMode);
-});
-
 function toggleColorMode() {
   const index = items.findIndex((item) => item.value === colorMode.preference);
 
