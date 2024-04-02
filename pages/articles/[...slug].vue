@@ -16,7 +16,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <UContainer :ui="{ base: 'pt-[70px]' }">
+  <UContainer :ui="{ base: 'pt-[20px]' }">
     <ContentDoc v-slot="{ doc }">
       <div class="sm:px-4 md:px-20 lg:px-40 py-4">
         <article>

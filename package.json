@@ -28,6 +28,7 @@
     "dayjs-nuxt": "^2.1.9",
     "gitalk": "^1.8.0",
     "nuxt": "^3.9.0",
+    "nuxt-lodash": "^2.5.3",
     "vue": "^3.4.0",
     "vue-router": "^4.2.5"
   }
