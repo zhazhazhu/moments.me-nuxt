@@ -26,6 +26,7 @@ export default defineNuxtConfig({
       "fluent-emoji",
       "material-symbols",
       "material-symbols-light",
+      "openmoji",
     ],
   },
 

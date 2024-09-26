@@ -30,11 +30,11 @@ function toggleColorMode() {
     <UContainer>
       <div class="flex items-center h-[65px]">
         <div class="flex items-end cursor-pointer" @click="navigateTo('/')">
-          <UIcon name="i-fluent-emoji-broccoli" class="text-3xl" />
+          <UIcon name="i-openmoji-evergreen-tree" class="text-3xl" />
           <span
             class="font-mono text-xl leading-6 ml-1 font-semibold select-none text-gray-700 dark:text-white"
           >
-            Z z
+            77
           </span>
         </div>
 

@@ -1,6 +1,6 @@
 export default defineAppConfig({
   ui: {
-    primary: "cyan",
+    primary: "yellow",
     gray: "neutral",
     card: {
       base: "overflow-hidden",
