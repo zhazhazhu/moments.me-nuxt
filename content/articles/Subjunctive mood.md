@@ -7,6 +7,10 @@ date: 2024-9-26
 
 # 虚拟语气(Subjunctive mood)
 
+**虚拟语气困扰了我很久，所以决定写篇博客加深下印象，你可能会有这样的疑问，为什么 I wish that I were a rabbit now. 这句话中now表示现在而句子中出现了were，为什么I第一人称后面却加 were,那就带着疑问看下去吧。**
+
+学习记录：[https://www.youtube.com/watch?v=-Skm12wNLa8](https://www.youtube.com/watch?v=-Skm12wNLa8)
+
 它的作用是来表示:
 1. 在脑中想象的/现实不可能发生的或者可能性很小的事
 2. 愿望/建议/命令/要求
