@@ -6,7 +6,7 @@ const colorMode = useColorMode();
   <div class="relative overflow-hidden h-screen">
     <div class="relative overflow-hidden h-[90%]">
       <img
-        src="/videos/1.jpg"
+        src="/videos/autumn.jpg"
         alt=""
         class="w-full h-full object-cover absolute top-0 left-0"
       />
