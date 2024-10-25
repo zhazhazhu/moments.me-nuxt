@@ -4,7 +4,7 @@ const colorMode = useColorMode();
 
 <template>
   <div class="relative overflow-hidden h-screen">
-    <div class="relative overflow-hidden h-[90%]">
+    <div class="relative overflow-hidden h-[95%]">
       <img
         src="/videos/autumn.jpg"
         alt=""
@@ -49,7 +49,7 @@ const colorMode = useColorMode();
       </div>
     </div>
 
-    <div class="h-[10%] text-center">
+    <div class="h-[5%] text-center">
       <UButton
         icon="i-ph-mouse-simple-fill"
         size="xl"
